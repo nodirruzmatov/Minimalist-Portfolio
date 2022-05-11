@@ -1,0 +1,48 @@
+.contact {
+  padding: 150px 0;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__heading {
+    width: 350px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Ibarra Real Nova';
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 42px;
+    letter-spacing: -0.357143px;
+    color: #33323D;
+  }
+
+  &__line {
+    max-width: 534px;
+    width: 100%;
+    margin: 0 32px;
+    height: 1px;
+    background-color: #dcdcde;
+  }
+}
+
+
+@media only screen and (max-width: 576px){
+  .contact {
+    padding: 40px 0 ;
+    &__container {
+      flex-direction: column;
+    }
+
+    &__heading {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    &__line {
+      display: none;
+    }
+  }
+}

@@ -1,1 +1,83 @@
-//bu yerda buttonlar yashaydi
+.sitebtn {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  background-color: #1d3444;
+  border: none;
+  transition: all 0.4s;
+
+  &:hover {
+    background-color: #55a292;
+  }
+
+  &:active {
+    background-color: #d2d6da;
+  }
+
+  &:hover &__left {
+    background-image: url(../../images/sitebtn-hover.png);
+  }
+    
+  .sitebtn:hover &__right {
+    background-color: #5fb4a2;
+  }
+    
+  .sitebtn:active &__right {
+    background-color: #d2d8db;
+  }
+
+
+  &__left {
+    padding: 26px 26px;
+    width: 16px;
+    height: 12px;
+    background-image: url(../../images/sitebtn.png);
+    background-repeat: no-repeat;
+    background-size: 16px 12px;
+    background-position: center;
+
+    
+  
+  }
+
+  &__right {
+    margin: 0;
+    padding: 0;
+    padding: 19px 37px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: #203a4c;
+    transition: all 0.4s;
+
+    
+  }
+}
+
+.sitebtn-two {
+  padding: 20px 26px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 2px;
+  white-space: nowrap;
+  text-transform: uppercase;
+  color: #33323D;
+  text-decoration: none;
+  border: 1px solid #33323D;
+  transition: all 0.4s;
+
+  &:hover {
+    background-color: #33323D;
+    color: #fff;
+  }
+
+  &:active {
+    opacity: 0.2;
+  }
+}

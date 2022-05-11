@@ -1,0 +1,86 @@
+.hero {
+  padding-bottom: 75px;
+
+  &__container {
+    padding: 0;
+    padding-top: 243px;
+    background-image: url(../../images/hero-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  &__img {
+    display: none;
+  }
+
+  &__left {
+    max-width: 445px;
+    width: 100%;
+    padding-top: 56px;
+    padding-right: 55px;
+    background-color: #fff;
+  }
+
+  &__heading {
+    margin: 0;
+    padding: 0;
+    padding-left: 20px;
+    margin-bottom: 62px;
+    font-family: 'Ibarra Real Nova', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 50px;
+    letter-spacing: -0.446429px;
+    color: #33323D;
+  }
+}
+
+@media only screen and (max-width: 768px){
+  .hero {
+    padding-bottom: 48px;
+
+    &__container {
+      background-image: url(../../images/hero-bg-tab.jpg);
+      background-size: cover;
+      
+    }
+
+    &__left {
+      max-width: 514px;
+      width: 100%;
+      padding-top: 56px;
+      padding-right: 55px;
+      background-color: #fff;
+    }
+
+    &__heading {
+      font-size: 40px;
+      line-height: 42px;
+    }
+  }
+  
+}
+
+@media only screen and (max-width: 576px){
+  .hero {
+
+    &__container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0 20px;
+      background-image: none;
+    }
+
+    &__img {
+      display: inline-block;
+    }
+
+    &__left {
+      padding-top: 24px;
+      padding-right: 0;
+    }
+  }
+}
