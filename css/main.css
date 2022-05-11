@@ -856,6 +856,122 @@ img {
   }
 }
 
+.portfolio {
+  padding: 75px 0;
+}
+
+.portfolio__list {
+  margin: 0;
+  padding: 0;
+}
+
+.portfolio__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.portfolio__item:nth-child(2n) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.portfolio__item + .portfolio__item {
+  padding-top: 80px;
+}
+
+.portfolio__right {
+  max-width: 350px;
+  min-height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  border-top: 1px solid #dcdcde;
+  border-bottom: 1px solid #dcdcde;
+}
+
+.portfolio__heading {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 28px;
+  font-family: 'Ibarra Real Nova';
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 42px;
+  letter-spacing: -0.357143px;
+  color: #33323D;
+}
+
+.portfolio__desc {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 33px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #33323D;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+}
+
+@media only screen and (max-width: 768px) {
+  .portfolio {
+    padding: 48px 0;
+  }
+  .portfolio__right {
+    max-width: 281px;
+    min-height: 418px;
+  }
+  .portfolio__desc {
+    font-size: 15px;
+    line-height: 30px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .portfolio {
+    padding: 48px 0;
+  }
+  .portfolio__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .portfolio__item:nth-child(2n) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .portfolio__item + .portfolio__item {
+    padding-top: 72px;
+  }
+  .portfolio__right {
+    max-width: 311px;
+    min-height: 368px;
+    margin-top: 32px;
+  }
+}
+
 .footer {
   background-color: #33323D;
 }
